@@ -9,3 +9,11 @@ p
 {
     color:#ffe1a0;
 }
+
+.Header_Image
+{
+  width: 100%;
+  height: 400px;
+   /* background: rgb(131,58,180);*/
+  background: linear-gradient(#c1f7fd, #ffe1a0);
+}

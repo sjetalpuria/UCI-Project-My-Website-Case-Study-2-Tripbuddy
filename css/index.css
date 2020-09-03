@@ -234,9 +234,8 @@ margin-right:25px;
 
 /* Personal Image*/
 img{
-width: 100%;
+width: 70%;
 height: auto;
-padding-inline-end:100%;
 }
 
 /* Logo */
@@ -268,15 +267,17 @@ li{
 /* Hero Block*/
 .heroimg
 {
-  
+  display: inline-block;
   height: 600px;
   padding: 25px;    
 
 }
 
-.paaOnMe 
+#paaOnMe 
 {
-  
+  display:flex;
+  flex-direction:row;
+  padding: 15px;
   color:#ffe1a0;
   
 }
@@ -324,14 +325,14 @@ padding-left: 75% ;
  
 }
 
-.Image_Skills
+#Image_Skills
 {
-  width: auto;
   
-
-  
-  
+  width: 100%;
+  height:100%;
 }
+
+
 
 @media screen and (max-width: 600px)
 {
