@@ -23,10 +23,12 @@ h4{
 html {
   height: 100%;
   background-color:#090a0f;
+  /*background-color:#f8facd;*/
   overflow: auto;
 }
 body {
   background:transparent;
+  
   overflow-x: hidden;
   }
  
@@ -54,7 +56,8 @@ body {
   
   .blob{
     border-radius: 50%;
-    background: #e0acf6;
+    /*background: #e0acf6;*/
+    background: #E71669;
     
     position:fixed;
     bottom:0;
@@ -85,6 +88,7 @@ body {
     height: 200px;
     left: 35%;
     bottom:-15%;
+    
    
     animation: wobble 4s ease-in-out alternate infinite, blob-one ease-in-out 13s infinite;
   }
