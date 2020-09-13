@@ -38,12 +38,38 @@ var main = function() {
       });
     };
   
-    $("#myImage").on("", function(){
-      console.log("You clicked on myImage");
-     
-    });
+    //About Me
+    window.onload=function()
+    {
+      const ABOUT = document.querySelector(".About_Me");
 
-    //contact animation
+      window.addEventListener('scroll', scrollEffect);
+
+      function scrollEffect()
+      {
+        if (window.scrollY >= 500)
+        {
+          ABOUT.style.opacity='1';
+          ABOUT.style.transform= 'translateX(0px)';
+          ABOUT.style.transition= '1s ease-in-out';
+        } 
+        
+        else
+        {
+          ABOUT.style.opacity='1';
+          ABOUT.style.transform= 'translateY(-50px)';
+        }
+       
+      }
+      scrollEffect();
+      
+    }
+
+    //work
+    $( ".Grid_Container_Case_Studies" ).click(function() {
+      $( "Grid_Container_Case_Studies" ).scroll();
+    });
+    //Contact Form
     $('.contact-form').find('.form-control').each(function() {
       var targetItem = $(this).parent();
       if ($(this).val()) {

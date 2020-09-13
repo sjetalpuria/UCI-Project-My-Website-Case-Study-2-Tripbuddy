@@ -3,6 +3,7 @@
   border: 3px solid; 
   border-color: red;
 }*/
+
 .flash-container {
   width: 100%;
   position: fixed;
@@ -23,6 +24,7 @@ html{
   overflow: auto;
   padding: 20px;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 h1
 {
@@ -56,82 +58,47 @@ p
   font-style: normal;
 }
 
-.Buttton {
-	border: 2px solid #D24D57;
-}
-.Button:after {
-	background: #D24D57;
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-}
-.Buttton:link, .Buttton:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size:14px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-.Buttton:link:after, .Buttton:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-.Buttton:link:hover, .Buttton:visited:hover {
-	color: #FFF;
-	text-shadow: none;
-}
-.Buttton:link:hover:after, .Buttton:visited:hover:after {
-	height: 450%;
-}
-.Buttton:link, .Buttton:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size:14px;
-	border-radius: 0;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+
+/* Button */
+.Button {
+  position: relative;
+  background-color: transparent;
+  border: 4px,solid #590202 ;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #000;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s; 
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.navBrand {
-  position: fixed;
-  left: 0;
-  z-index: 600;
-  padding: 10px;
+.Button:hover {
+  position: relative;
+  background-color:#590202 ;
+  border: none ;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s; 
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+.Button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 .navBrand img {
@@ -161,13 +128,11 @@ p
 
 .headerImage
 {
-  
-  height: 50%;
-  background-image: url("https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background: url(https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  position:relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  
+  height: 50%; 
 }
 .headerLinks {
 
@@ -290,15 +255,17 @@ margin-bottom: 10px;
 }
 
 .ImageContainer
-{
-  
+{  
   width: auto;
   height: 200px;
-  background-image: url("https://images.unsplash.com/photo-1588912914049-d2664f76a947?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    
+      
 }
 
-
+.imageSkills
+{
+  width: 100%;
+  height: 40%;
+}
  
 
 .inline-block_Skills
@@ -339,14 +306,34 @@ margin-bottom: 10px;
 footer
 {
 background-color:#A6A3A1 ;
-height: 100px;
-width: auto;
-padding-left: 25px ;
+width: 100%;
 
 }
 
+.Copyright
+{
+  position: static;
+  padding:10px;
+  text-align:center;
+  
+}
 
+.iconsContainer{
+ overflow:visible;
+ padding-top:10px;
+ padding-bottom:10px;
+ padding-left: 0px;
+ text-align:center;
+ 
+ object-fit: fill;
 
+}
+
+.icons
+{
+  width: 30px;
+  padding:20px;
+}
 
   /*media-only screen*/
   @media screen and (max-width: 600px) {
