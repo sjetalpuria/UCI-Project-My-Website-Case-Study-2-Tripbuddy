@@ -28,20 +28,20 @@ html{
 }
 h1
 {
-  font-family: "Alegreya Sans SC", Sans-serif;
+  font-family: "Alegreya Sans SC", serif;
   font-size: 36px;
   /*color: #260303;*/
   color:#590202;
 }
 h2
 {
-  font-family:"Alegreya Sans SC", Sans-serif;
+  font-family:"Alegreya Sans SC", serif;
   font-size: 30px;
   color: #590202;
 }
 
 h4{
-  font-family:"Alegreya Sans SC", Sans-serif;
+  font-family:"Alegreya Sans SC", serif;
   font-size: 25px;
   color: #590202;
 }
@@ -213,9 +213,9 @@ p
 .paraOnMe
 {
   color:#000;
-  margin-left: 10px;
-  font-weight: 500px;
-  
+  margin-left: 100px;
+  margin-right: 300px;
+   
 }
 
 
