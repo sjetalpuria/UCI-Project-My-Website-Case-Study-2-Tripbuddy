@@ -41,31 +41,35 @@
       
       <!-- New nav and header section starts here-->
         
-       <header>
-         <section class= "headerImage">
-           <img src= "Images/headerImage.jpg">
-          <div class="navHeader">
+       <header> <img  src="Images/SJ.png" class="Logo"></header>
           
-          <i class="fa fa-bars fa-3x"></i>
+       <i class="fa fa-bars fa-3x"></i>
+       <nav>
+         <ul>
+          <li><a href = "#AboutMeHeading"> About Me </a></li>
+          <li><a href = "#Case Studies"> Work </a></li>
+          <li><a href = "#UX_Skills"> My Skills</a></li>
+          <li><a href = "#Contact_Form"> Contact</a></li>
+           
+          
+          
+         </ul>
+       </nav>
+       
+       
+       <section class= "sec1">
+        <div>
+          <h1 class="myName">
+            Shivani Jetalpuria
+          </h1>
 
-          <div class="headerLinks">
-            <div class="navBrand">
-              <img src= "Images/SJ.png">
-            </div>
-            <ul>
-             <li><a href = "#Contact_Form"> Contact</a></li>
-             <li><a href="#My UX Skills"> My Skills </a></li>
-              <li><a href="#Case Studies"> Work</a></li>
-              <li><a href="#AboutMeHeading"> About Me </a></li>
-            </ul>
-          </div>
+          <h4>
+            User Designer, Front-end and Back-end
+          </h4>
         </div>
-
-            <!-- <img src="Images/headerImage.jpg">-->
-          </div>  
-        </secion>     
-      </header>
-
+       </section>     
+          
+      
       <!-- About Me section starts here-->
         <section class="About_Me">
            <div class="aboutContainer"data-aos="fade-up" data-aos-duration="2000">
@@ -107,6 +111,7 @@
             <h1>
               Case Studies
             </h1>
+          </div>
              <div class="GridAreas" data-aos="flip-right" data-aos-duration="3000">
               <div>
                <h2 class= "Align_hEading">
@@ -122,7 +127,7 @@
                    <img src="Images/US_Homeland_ Security_Mockup.png">
                 </div>
                  
-              </div>
+             </div>
 
               <div class="GridAreas" data-aos="flip-right" data-aos-duration="3000">
                 <div>
@@ -151,8 +156,9 @@
             <div class="Flex_mySkills">
             
             <div class="ImageContainer" data-aos="zoom-in">
-               
+                <div id="UX_Skills">
                 <h1>My UX Skills</h1>
+              </div>
                 <img class="imageSkills" src= "Images/My_Skills.jpg">
               </div>
               
@@ -284,7 +290,7 @@
         </section>
 
         <div class="preloader">
-          <img src="images/SJ.png">
+          <img src="Images/loading.gif">
         </div>
         
         <script src="index.js"></script>

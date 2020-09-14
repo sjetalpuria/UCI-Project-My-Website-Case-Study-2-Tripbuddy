@@ -26,6 +26,38 @@ html{
   scroll-padding-top: 80px;
   overflow-x: hidden;
 }
+
+header {
+   padding: 10px 100px;
+  box-sizing: border-box;
+}
+
+
+section.sec1{
+  
+  width: 100%;
+  height:100vh;
+  background:url(https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.myName
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.Logo
+{
+  width:50px;
+  height:auto;
+}
 h1
 {
   font-family: "Alegreya Sans SC", serif;
@@ -58,7 +90,46 @@ p
   font-style: normal;
 }
 
+nav
+{
+  width: 100%;
+  height:50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(255,255,255, 0.2);
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+  position: sticky;
+  top: 0px;
+  z-index: 500;
+}
 
+nav ul
+{
+  display: flex;
+  margin:0px;
+  padding: 0px 100px;
+  float: right;
+  z-index: 500;
+}
+
+nav ul li
+{
+  list-style: none;
+  color: white;
+   float: right; 
+   padding: 10px;
+   font-size: 20px;
+}
+
+nav ul li a
+{
+  display: block;
+  color: #fff;
+  padding: 0px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Alegreya Sans SC",serif;
+  transition: all 0.2s ease-in;
+}
 /* Button */
 .Button {
   position: relative;
@@ -67,7 +138,10 @@ p
   border-radius: 10px;
   font-size: 14px;
   color: #000;
-  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
   width: 200px;
   text-align: center;
   transition-duration: 0.4s; 
@@ -80,19 +154,22 @@ p
   position: relative;
   background-color:#590202 ;
   border: none ;
-  border-radius: 10px;
+  border-radius: 30px;
   font-size: 14px;
   color: #fff;
-  padding: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
   width: 200px;
+  height: 50px;
   text-align: center;
   transition-duration: 0.4s; 
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
-
 
 .Button:active:after {
   padding: 0;
@@ -101,10 +178,8 @@ p
   transition: 0s
 }
 
-.navBrand img {
-  width: 50px;
-  height:auto;
-}
+
+
 
 .fa-bars {
   display: none !important;
@@ -134,38 +209,14 @@ p
   background-repeat: no-repeat;
   height: 50%; 
 }
-.headerLinks {
 
- position: fixed;
- width: 100%;
- z-index: 500;
- /*border-style: solid;
- border-color: red;*/
- top: 0px;
- left:0px;
- background-color:#A6A3A1;
- 
- }
-
- .headerLinks li {
-   color: white;
-   float: right; 
-   padding: 15px;
-   font-size: 25px;
- }
-
- .headerLinks a {
-  text-decoration: none !important;
-  color: #590202;
-  font-family: Alegreya Sans SC;
-  transition: all 0.2s ease-in;
- }
-
- .headerLinks a:hover {
+  
+ nav ul li a:hover
+ {
    color:#A6916A !important;
  }
 
- .headerLinks a::after {
+ nav ul li a::after {
   display: block;
     margin: 0 auto;
   margin-top: 5px;
@@ -179,8 +230,9 @@ p
   transition: width 0.6s, opacity 0.8s;
 }
 
-.headerLinks a:hover::after,
-.headerLinks a:focus::after {
+nav ul li a:hover::after,
+nav ul li a:focus::after
+ {
   opacity: 1;
   width: 100%;
 }
@@ -264,7 +316,7 @@ margin-bottom: 10px;
 .imageSkills
 {
   width: 100%;
-  height: 40%;
+  height: 80%;
 }
  
 
@@ -305,7 +357,7 @@ margin-bottom: 10px;
 /*footer block*/
 footer
 {
-background-color:#A6A3A1 ;
+background-color: rgba(0, 0, 0, 0.8); ;
 width: 100%;
 
 }
@@ -388,8 +440,8 @@ width: 100%;
   input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 2px solid  #c1f7fd ; /* Gray border */
-    background:#090a0f;
+    border: 2px solid  black ; 
+    background: transparent;
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -399,17 +451,17 @@ width: 100%;
   
   label
   {
-    color:white;
+    color: black;
   }
 
   #inText
   {
-    color:white;
+    color: black;
   }
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    
+    
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
